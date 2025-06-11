@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 
 public class BonusServiceTest {
     @Test
-    void calculateRegisteredUnderLimit1() {
+    void calculateRegisteredUnderLimit() {
         BonusService service = new BonusService();
         long amount = 1000;
         boolean registered = true;
@@ -13,7 +13,7 @@ public class BonusServiceTest {
     }
 
     @Test
-    void calculateRegisteredUnderLimit2() {
+    void calculateRegisteredUnderLimit1() {
         BonusService service = new BonusService();
         long amount = 1_000_000;
         boolean registered = true;
@@ -23,7 +23,7 @@ public class BonusServiceTest {
     }
 
     @Test
-    void calculateUnregisteredUnderLimit3() {
+    void calculateUnregisteredUnderLimit() {
         BonusService service = new BonusService();
         long amount = 1000;
         boolean registered = false;
@@ -33,7 +33,7 @@ public class BonusServiceTest {
     }
 
     @Test
-    void calculateUnregisteredUnderLimit4() {
+    void calculateUnregisteredUnderLimit1() {
         BonusService service = new BonusService();
         long amount = 1_000_000;
         boolean registered = false;
